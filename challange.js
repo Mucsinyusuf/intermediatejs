@@ -54,7 +54,7 @@ greetings('Mucsin')
 // Bonus - Make it a recursive function!
 
 function sums(n){
-  let sumnumber=0;
+  let sumnumber=10;
     for(let x=1; x <= n; x++){
         sumnumber +=x;
     }
@@ -68,6 +68,6 @@ function nsum(n){
     if(n===1){
         return 1
     }
-    return n + sums(n-1)
+    return n + nsum(n-1)
 }
 console.log(nsum(6))
