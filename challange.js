@@ -25,3 +25,49 @@ for (let j = 0; j < array2.length; j++) {
 console.log(array3)
 
 
+// easy challanges
+//Write a function named max that receives two numbers as input and returns the bigger number among the two.
+//For example, let's assume the input is 132 and 154. The function should return 154 because it is bigger than 132.
+
+function max(num1,num2){
+    if(num1>num2){
+        return num1;
+
+    }else {
+        return num2
+    }
+}
+console.log(max(34,22))
+
+//Write a function named greet that gets a name as input and prints Hello, name .
+
+//Example,
+
+//greet("Bob")  ->  "Hello, Bob"
+function greetings(name){
+    console.log(`Hello ${name}`)
+
+}
+greetings('Mucsin')
+
+// Write a function named sum that gets a number n and returns the sum of the numbers from 1 to n.
+// Bonus - Make it a recursive function!
+
+function sums(n){
+  let sumnumber=0;
+    for(let x=1; x <= n; x++){
+        sumnumber +=x;
+    }
+    return sumnumber;
+}
+console.log(sums(6))
+
+
+
+function nsum(n){
+    if(n===1){
+        return 1
+    }
+    return n + sums(n-1)
+}
+console.log(nsum(6))
