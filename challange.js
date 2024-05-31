@@ -71,3 +71,59 @@ function nsum(n){
     return n + nsum(n-1)
 }
 console.log(nsum(6))
+
+
+// You are given a function called pyramid that takes in a parameter called height.
+// You need to complete the code inside the function to make it print a pyramid as shown above. 
+//A pyramid of height 3 would look like:
+
+//    #
+//   ##
+//  ###
+
+function pyramid(height){
+    for(let i=1;i<=height;i++){
+        let string = '';
+
+
+        for (let j =0;j<height-i;j++){
+            string += ' ';
+
+        }
+        for (let k=0;k<i;k++){
+            string += '#';
+
+        }
+        console.log(string);
+
+    }
+
+
+}
+pyramid(4);
+
+
+
+function pyramids(height){
+    for(let l =1;l<=height;l++){
+       let spaces = '';
+        for(let m =0;m<height-l;m++){
+            spaces += ' ';
+        }
+        for(let n= 0;n<l;n++){
+            spaces += '❤️'
+        }
+
+        spaces += '  ';
+        for(let p=0;p<l;p++){
+            spaces += '❤️';
+        }
+        spaces += '  '
+        for(let p=0;p<l;p++){
+            spaces += '❤️';
+        }
+        
+console.log(spaces)
+    }
+}
+pyramids(3);
